@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors"
+    "start:bad": "cross-env NODE_ENV=development webpack-dev-server --progress webpack.config.js",
+    "start:good": "cross-env NODE_ENV=development webpack-dev-server --progress --color webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,13 +15,14 @@
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
+    "cross-env": "^1.0.8",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "postcss-cssnext": "^2.9.0",
     "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1",
+    "webpack-dev-server": "^1.16.2",
     "json-loader": "^0.5.4",
     "file-loader": "^0.9.0",
     "raw-loader": "^0.5.1",
