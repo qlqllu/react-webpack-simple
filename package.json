@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors"
+    "bad": "webpack-dev-server --progress webpack.config.js",
+    "good": "webpack-dev-server --progress",
+    "good2": "webpack-dev-server --progress --color webpack.config.js"
   },
   "author": "",
   "license": "ISC",
